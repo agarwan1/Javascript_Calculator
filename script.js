@@ -34,14 +34,17 @@ class Calculator {
     const current = parseFloat(this.currentOperand)
     if (isNaN(prev) || isNaN(current)) return 
     switch (this.operation) {
-	  case '+': 
+	   case '+': 
         computation = prev +current 
+        break 
+      case '-': 
+        computation = prev -current 
         break 
       case '*': 
         computation = prev *current 
-		break
-      case '-': 
-        computation = prev -current 
+        break 
+      case 'รท': 
+        computation = prev / current 
         break 
       default: 
       return 

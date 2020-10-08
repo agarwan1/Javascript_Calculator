@@ -36,6 +36,8 @@ class Calculator {
     switch (this.operation) {
       case '*': 
         computation = prev *current 
+      case '-': 
+        computation = prev -current 
         break 
       default: 
       return 
